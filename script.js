@@ -11,7 +11,7 @@ fetch(apiUrl)
 // Fetch the /api/message endpoint
 const text = document.getElementById("text");
 
-fetch(apiUrl + "/api/message") // Correctly append /api/message
+fetch("/api/message") 
   .then(response => response.text()) // Use text() since backend sends plain text
   .then(data => {
     text.innerText = data; // Update the HTML element with the response text
