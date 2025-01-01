@@ -2,6 +2,7 @@
     --primary-color: #0FFA0F;
     --white-color: #f5f5f5;
     --border-radius: 15px;
+    --border-radius-circle: 50%;
 
 }
 
@@ -41,12 +42,74 @@ body{
     background-color: var(--white-color);
 }
 
-.input-container button{
-    width: 140px;
-    height: 70px;
-    border-radius: var(--border-radius);
-    background-color: var(--white-color);
+.input-button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 
+.input-container .input-button button{
+    width: auto;
+    height: auto;
+    padding: 8px;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius-circle);
+    background-color: black;
+    cursor: pointer;
+}
+
+.icon{
+    fill: white;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.btn:hover{
+    scale: 1.1;
+}
+@media (max-width: 768px) {
+    .input {
+        width: 90%;
+    }
+
+    .input-container button {
+        width: 100px;
+        height: 50px;
+    }
+
+    body {
+        padding: 50px;
+    }
+
+    .page-title {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .input {
+        width: 100%;
+    }
+
+    .input-container button {
+        width: 80px;
+        height: 40px;
+    }
+
+    body {
+        padding: 20px;
+    }
+
+    .page-title {
+        margin-bottom: 30px;
+    }
+}
 
