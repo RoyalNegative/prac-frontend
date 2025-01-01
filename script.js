@@ -1,6 +1,3 @@
-import { animate, scroll } from "motion"
-
-
 const apiUrl = "https://pracc-0dcdba945892.herokuapp.com"; // Backend base URL
 
 // Fetch the root endpoint (optional test)
