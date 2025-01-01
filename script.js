@@ -1,4 +1,4 @@
-const apiUrl = "https://pracc-0dcdba945892.herokuapp.com/api/some-endpoint";
+const apiUrl = "https://pracc-0dcdba945892.herokuapp.com/";
 
 
 fetch(apiUrl)
