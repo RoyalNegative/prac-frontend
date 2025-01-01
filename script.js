@@ -1,7 +1,7 @@
 import { animate, scroll } from "motion"
 
 
-const apiUrl = "https://pracc-0dcdba945892.herokuapp.com/"; // Backend base URL
+const apiUrl = "https://pracc-0dcdba945892.herokuapp.com"; // Backend base URL
 
 // Fetch the root endpoint (optional test)
 fetch(apiUrl)
@@ -14,7 +14,7 @@ fetch(apiUrl)
 // Fetch the /api/message endpoint
 const text = document.getElementById("text");
 
-fetch(apiUrl + "api/message") // Correctly append /api/message
+fetch(apiUrl + "/api/message") // Correctly append /api/message
   .then(response => response.text()) // Use text() since backend sends plain text
   .then(data => {
     text.innerText = data; // Update the HTML element with the response text
