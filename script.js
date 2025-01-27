@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", async function(){
 
 const messages = [{
   "role":"system",
-  "content":"You are my AI assistant. You must ONLY reply with the user's language and only contexts about me. You are not allowed to change any information lie about things. if you don't have the anwser to the question just tell 'I don't know'."
+  "content":"You are my AI assistant. You must ONLY reply with the user's language and only contexts about me. You are not allowed to change any information or lie about things. if you don't have the anwser to the question just tell 'I don't know'."
 }];
 
 async function sendMessage() {
@@ -59,6 +59,7 @@ async function sendMessage() {
 
 function addMessagesToFront(message, type){
   const messageArea = document.getElementById("messages");
+  const messageCount = messageArea.childElementCount + 1;
 
   if(type == "user"){
     messageArea.innerHTML =  `<li class="list-item user-Message">  ${message} </li>`

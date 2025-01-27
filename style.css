@@ -91,19 +91,22 @@ body{
 }
 
 .messageList li{
+    padding: 20px;
     list-style-type: none;
+    display: flex;
 }
 
 .bot-Message{
-    position: absolute;
-    left: 0;
     color:#0FFA0F;
     display: block;
 }
 
 .user-Message{
-    position: absolute;
+    align-self: flex-end;
+    justify-content: end;
     right: 0;
+    width: 100%;
+    display: block;
 
 }
 @media (max-width: 768px) {
