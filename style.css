@@ -79,6 +79,33 @@ body{
 .btn:hover{
     scale: 1.1;
 }
+
+.messageList{
+    width: 100%;
+    height: 60vh;
+    border: 1px solid white;
+    color: white;
+    position: relative;
+    font-size: 25px;
+    overflow-y: scroll;
+}
+
+.messageList li{
+    list-style-type: none;
+}
+
+.bot-Message{
+    position: absolute;
+    left: 0;
+    color:#0FFA0F;
+    display: block;
+}
+
+.user-Message{
+    position: absolute;
+    right: 0;
+
+}
 @media (max-width: 768px) {
     .input {
         width: 90%;
