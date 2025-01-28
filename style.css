@@ -60,6 +60,10 @@ body{
     background-color: black;
     cursor: pointer;
 }
+.error{
+    color: red;
+    font-size: 12px;
+}
 
 .input-container h2{
     color: white;

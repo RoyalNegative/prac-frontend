@@ -11,7 +11,8 @@
     <main class="main">
         <div class="container">
             <h1 class="page-title">Kaan'ın Çalışma Alanı</h1>
-            <div id="progressBar" class="progress-bar" role="progressbar" width="0" aria-valuemax="100" aria-valuemin="0"></div>
+            <h3 class="error" id="error-msg"> error message</h3>
+            <div id="progressBar" class="progress-bar" role="progressbar" style="width:0%; color: red;" aria-valuemax="100" aria-valuemin="0"></div>
         </div>
         <div class="input-container">
             <h2 id="text"> Hello I am Kaan's personal AI Assistant how can I help you today.</h2>
@@ -25,8 +26,7 @@
             </ul>  
             <div class="input-button">
                 <input type="text" class="input" placeholder="Sorununuzu Yazınız" id="prompt">
-                <button class="btn" onclick="sendMessage()">
-                    
+                <button class="btn" onclick="sendMessage()" id="sendButton">
                     <svg class="icon" width="25" height="25">
                         <use href="./images/icons.svg#icon-circle-up"></use>
                     </svg>
